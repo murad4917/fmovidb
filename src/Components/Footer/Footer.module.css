@@ -1,0 +1,146 @@
+.footer {
+  background-color: #000000;
+  color: #757575;
+  padding: 3rem 0 2rem;
+  border-top: 1px solid #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.socialIcon {
+  color: #757575;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #ffffff;
+}
+
+/* Links Container */
+.linksContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: #757575;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Service Code Button */
+.serviceCode {
+  margin-bottom: 2rem;
+}
+
+.serviceCodeBtn {
+  background: transparent;
+  border: 1px solid #757575;
+  color: #757575;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.serviceCodeBtn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 0.75rem;
+  color: #757575;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .linksContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .socialIcons {
+    gap: 1rem;
+  }
+
+  .socialIcon {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .linksContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .linkList li {
+    margin-bottom: 0.75rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+
+  .socialIcons {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .serviceCode {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}
